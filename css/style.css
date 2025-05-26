@@ -45,6 +45,7 @@ p {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  
 }
 
 .btn-entrar:hover {
@@ -55,6 +56,7 @@ p {
   color: #000;
   width: 100%;
   max-width: 1228px;
+  
 }
 
 header {
@@ -145,4 +147,165 @@ header {
   .line {
     max-width: 90%;
   }
+}
+
+.login_id{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #484848;
+  border-radius: 40px;
+  padding: 30px;
+  margin-top: 65px;
+  margin-bottom: 300px;
+}
+
+
+
+.img-login {
+  height: 170px;
+  margin-top: 30px;
+
+}
+
+.email{
+  text-decoration: none;
+  
+  
+}
+
+.button1{
+  color: #1D1E1B;
+}
+
+.button1{
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+  width: 110px;
+  height:30px;
+  padding-bottom: 25px;
+}
+
+.Remenber-me{
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  margin-top: -15px;
+
+}
+
+.p {
+  margin-top: 20px;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1.5px solid #484848;
+}
+
+.input-box input{
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border-color: transparent;
+}
+
+.input-box img {
+  width: 20px;
+  height: 20px;
+  text-align: left;
+}
+
+.img-input {
+  display: flex;
+  gap: 5px;
+}
+
+.topo1{
+  text-align: left;
+ position: relative;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1.5px solid #000000;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 8px;
+  margin: 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu-btn, .search-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #aaa;
+  margin: 10px 0;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.menu-item .number {
+  width: 24px;
+  display: inline-block;
+  font-weight: bold;
+  color: #888;
+}
+
+.menu-item span:last-child {
+  color: #004080;
+}
+
+.rodape {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.rodape .arrow {
+  float: right;
 }
