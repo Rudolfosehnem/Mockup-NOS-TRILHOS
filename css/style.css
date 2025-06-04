@@ -10,10 +10,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   text-align: center;
-  padding: 20px;
+  padding: 0;
+}
+
+.incial1{
+  margin-top: 60%;
+}
+.imagem_trilho{
+  position: fixed;     
+  left: 0;             
+  top: 50%;          
+  transform: translateY(-50%);  
+  width: 100x;        
+  height: auto;
+  z-index: 1000;       
+
+}
+.imagem_trilho img{
+width: 220px;
+margin-left: 10px;
 }
 
 h1 {
@@ -24,11 +41,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1rem;
-  color: #000;
-  margin: 10px 0 20px;
-}
+
 
 .rail-image {
   width: 150px;
@@ -45,6 +58,7 @@ p {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  margin-top: 140%;
   
 }
 
@@ -52,12 +66,7 @@ p {
   background-color: #555;
 }
 
-.line {
-  color: #000;
-  width: 100%;
-  max-width: 1228px;
-  
-}
+
 
 header {
   padding: 10px 20px;
@@ -76,7 +85,7 @@ header {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 30px 20px;
   border: 2px solid #e0e0e0;
   border-radius: 15px;
@@ -196,13 +205,11 @@ header {
   display: flex;
   justify-content: left;
   gap: 5px;
-  margin-top: -15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 
 }
 
-.p {
-  margin-top: 20px;
-}
 
 .input-box{
   position: relative;
@@ -235,6 +242,10 @@ header {
   width: 100%;
   height: 30px;
   border-bottom: 1.5px solid #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
 }
 
 .search-container {
@@ -242,6 +253,9 @@ header {
   align-items: center;
   padding: 10px;
   background-color: white;
+  width: 92%;
+  position: relative;
+  top: 20px;
 }
 
 .search-container input {
@@ -299,28 +313,18 @@ header {
 }
 
 .rodape {
-  background-color: #333;
-  color: white;
-  text-align: center;
+  background-color: #484848;
+  text-align: left;
   padding: 10px;
   font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
 }
 
-.rodape .arrow {
-  float: right;
-}
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f2f2f2;
-  overflow: hidden;
-}
 
 .app {
   max-width: 400px;
@@ -412,3 +416,7 @@ body {
 .card .mensagem {
   white-space: pre-wrap;
 }
+
+
+
+
