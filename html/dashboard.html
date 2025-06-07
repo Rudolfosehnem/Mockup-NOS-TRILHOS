@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+<script>
+  function abrirSidebar() {
+    document.getElementById("sidebar").style.width = "220px";
+  }
+
+  function fecharSidebar() {
+    document.getElementById("sidebar").style.width = "0";
+  }
+</script>
+
 <body>
-    <h2 class="topo1">NOS TRILHOS</h2>
-    <div class="search-container">
-        <button class="menu-btn">&#9776;</button>
-        <input type="text" placeholder="O que você procura?">
-        <button class="search-btn"></button>
-      </div>
-    
-      <hr class="divider">
-    
-      <h2 class="section-title">Serviços</h2>
-    
-      <hr class="divider">
-    
-      <h3 class="section-subtitle">Mais acessados</h3>
-    
-      <div class="menu-list">
-        <div class="menu-item"><span class="number">1</span> <span>Gestão de Rotas</span></div>
-        <div class="menu-item"><span class="number">2</span> <span>Manutenção</span></div>
-        <div class="menu-item"><span class="number">3</span> <span>Relatórios e Análises</span></div>
-        <div class="menu-item"><span class="number">4</span> <span>Alertas e Notificações</span></div>
-        <div class="menu-item"><span class="number">5</span> <span>Dashboard</span></div>
-      </div>
-    
-      <footer>
-        <p class="rodape">NOS TRILHOS</p>
-      </footer>
-    
+  
+<button class="abrir-btn" onclick="abrirSidebar()">☰</button>
+
+
+<div id="sidebar" class="sidebar">
+  <a href="javascript:void(0)" class="fechar-btn" onclick="fecharSidebar()">✖</a>
+  <a href="#">Início</a>
+  <a href="#">Dashboard</a>
+  <a href="#">Gestão de Rotas</a>
+  <a href="#">Manutenção</a>
+  <a href="#">Relatório e Análise</a>
+  <a href="#">Notificações</a>
+  <a href="#">Sair</a>
+</div>
+
+  <h2 class="topo1">NOS TRILHOS</h2>
+  <div class="search-container">
+    <input type="text" placeholder="O que você procura?" style="text-align: center;">
+    <img src="../images/lupa.png" alt="" style="height: 20px; position: relative; right: 31px;">
+  </div>
+
+   <div class="linha-com-texto">
+    <span>Serviços</span>
+  </div>
+  
+  
+
+  <h3 class="section-subtitle">Mais acessados</h3>
+
+  <div class="menu-list">
+    <div class="menu-item"><span class="number">1</span> <span>Gestão de Rotas</span></div>
+    <div class="menu-item"><span class="number">2</span> <span>Manutenção</span></div>
+    <div class="menu-item"><span class="number">3</span> <span>Relatórios e Análises</span></div>
+    <div class="menu-item"><span class="number">4</span> <span>Alertas e Notificações</span></div>
+    <div class="menu-item"><span class="number">5</span> <span>Dashboard</span></div>
+  </div>
+
+  <footer>
+    <p class="rodape">NOS TRILHOS</p>
+  </footer>
+
 </body>
+
 </html>
