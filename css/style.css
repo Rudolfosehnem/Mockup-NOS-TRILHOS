@@ -16,7 +16,7 @@ body {
 }
 
 .incial1 {
-  margin-top: 270px;
+  margin-top: 300px;
 }
 
 .imagem_trilho {
@@ -136,7 +136,7 @@ header {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1800px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -370,17 +370,6 @@ header {
 
 
 
-.app {
-  max-width: 400px;
-  margin: auto;
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 3px solid #444;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 .header {
   background-color: #333;
