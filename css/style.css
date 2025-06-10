@@ -185,6 +185,7 @@ header {
 }
 
 .button1 {
+  margin-top: 30px;
   color: #1D1E1B;
 }
 
@@ -354,6 +355,10 @@ header {
 .menu-item span:last-child {
   color: #004080;
   font-size: 20px;
+}
+
+#password-error {
+  margin-top: 35px;
 }
 
 .rodape {
@@ -536,7 +541,7 @@ header {
   background-color: #484848;
   width: 100%;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: white;
   font-size: 25px;
   padding-top: 25px;
@@ -548,13 +553,14 @@ header {
  text-align: left;
  margin-left: 50px;
  position: absolute;
- top: 140px;
+ top: 130px;
  
  
 }
 
 .onlyline{
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .rotas img{
@@ -562,15 +568,42 @@ header {
   height: 45px;
 }
 
-.container-gestao{
+.container-gestao {
   margin-top: 15px;
   text-align: left;
-  margin-left: 40px;
-  display: flex; flex-direction: column; 
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.container-gestao img{
-   width: 25px;
+.container-gestao img {
+  width: 25px;
   height: 25px;
+  
+}
+
+.container-gestao p:nth-child(odd) {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  
+  
+}
+
+.container-gestao p:nth-child(even) {
+  background-color: #d1d1d1;  
+  padding: 10px;
+  
+}
+
+.container-gestao p {
+  transition: background-color 0.3s ease;
+}
+
+.manutencao{
+
+  font-size: 25px;
+  text-align: left;
+  margin-left: 50px;
+  position: absolute;
+  top: 145px;
 }

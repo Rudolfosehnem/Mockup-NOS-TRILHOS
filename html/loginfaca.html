@@ -62,11 +62,11 @@
           const password = passwordInput.value;
       
           if (!validatePassword(password)) {
-            event.preventDefault(); // Impede o envio
+            event.preventDefault(); 
             errorMessage.style.display = 'block';
             passwordInput.style.border = '2px solid red';
           } else {
-            // Validação passou, formulário será enviado normalmente
+           
             errorMessage.style.display = 'none';
             passwordInput.style.border = '';
           }
