@@ -291,7 +291,7 @@ header {
   font-weight: bold;
   margin-top: 140px;
   font-size: 25px;
-  
+
 }
 
 .linha-com-texto {
@@ -470,10 +470,10 @@ header {
   text-align: left;
 }
 
-.sidebar img{
+.sidebar img {
   width: 20px;
-    height: 20px;
-    color: white;
+  height: 20px;
+  color: white;
 }
 
 .sidebar a {
@@ -489,9 +489,9 @@ header {
   background-color: #575757;
 }
 
-.menuside{
+.menuside {
   padding-top: 123px;
-  padding-left: 10px; 
+  padding-left: 10px;
   text-decoration: none;
   color: white;
   display: block;
@@ -537,7 +537,7 @@ header {
   }
 }
 
-.topo2{
+.topo2 {
   background-color: #484848;
   width: 100%;
   margin-top: 0;
@@ -548,22 +548,22 @@ header {
 
 }
 
-.rotas{
- font-size: 25px;
- text-align: left;
- margin-left: 50px;
- position: absolute;
- top: 130px;
- 
- 
+.rotas {
+  font-size: 25px;
+  text-align: left;
+  margin-left: 50px;
+  position: absolute;
+  top: 130px;
+
+
 }
 
-.onlyline{
+.onlyline {
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
-.rotas img{
+.rotas img {
   width: 45px;
   height: 45px;
 }
@@ -579,31 +579,147 @@ header {
 .container-gestao img {
   width: 25px;
   height: 25px;
-  
+
 }
 
 .container-gestao p:nth-child(odd) {
-  background-color: #f0f0f0; 
-  padding: 10px; 
-  
-  
+  background-color: #f0f0f0;
+  padding: 10px;
+
+
 }
 
 .container-gestao p:nth-child(even) {
-  background-color: #d1d1d1;  
+  background-color: #d1d1d1;
   padding: 10px;
-  
+
 }
 
 .container-gestao p {
   transition: background-color 0.3s ease;
 }
 
-.manutencao{
+.manutencao-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: #EEEDEB;
 
+  border: 2px solid;
+}
+
+.titulo {
+  background-color: #484848;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+td {
+  border: 1px solid black;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botao-confirmar {
+  margin-top: 15px;
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.botao-confirmar:hover {
+  background-color: #0055aa;
+}
+
+.mensagem {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  select {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .botao-confirmar {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+.manutencao {
   font-size: 25px;
   text-align: left;
   margin-left: 50px;
   position: absolute;
-  top: 145px;
+  top: 130px;
+
+}
+
+.realizadas-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: #EEEDEB;
+
+  border: 2px solid;
+
+
+}
+
+.td1{
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+
+
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.manutencao img {
+  width: 45px;
+  height: 45px;
 }
