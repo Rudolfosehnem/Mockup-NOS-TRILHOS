@@ -723,3 +723,84 @@ table {
   width: 45px;
   height: 45px;
 }
+
+.sidebar1 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #484848;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1001;
+  text-align: left;
+}
+
+.sidebar1 img {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.sidebar1 a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar1 a:hover {
+  background-color: #575757;
+}
+
+.menuside1 {
+  padding-top: 123px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.2s;
+  font-size: 25px;
+}
+
+
+.abrir-btn1 {
+  position: fixed;
+  top: 43px;
+  left: 50px;
+  z-index: 1100;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+
+.fechar-btn1 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  .sidebar1 a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .abrir-btn1 {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
