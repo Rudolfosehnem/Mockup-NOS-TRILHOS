@@ -804,3 +804,88 @@ table {
     padding: 8px 12px;
   }
 }
+
+.botao-sair-sidebar {
+ background-color: transparent;
+ border: transparent;
+ text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.2s;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+
+.fundo-modal-saida {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+
+.caixa-confirmacao-saida {
+  background-color: #444;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.caixa-confirmacao-saida h2 {
+  margin-top: 0;
+}
+
+.botoes-saida {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botao-cancelar-saida,
+.botao-confirmar-saida {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.botao-cancelar-saida {
+  background-color: white;
+  color: black;
+}
+
+.botao-confirmar-saida {
+  background-color: black;
+  color: white;
+}
+
+.container-taxas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.taxa-pontualidade {
+  margin: 5px, 20px;
+  background-color: transparent;
+  border: 2px solid;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.taxa-pontualidade img{
+  width: 175px;
+  height: 150px;
+  
+}
