@@ -7,7 +7,6 @@
 body {
   background-color: #EEEDEB;
   font-family: Arial, sans-serif;
-
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -675,9 +674,9 @@ select {
 
 .manutencao {
   font-size: 25px;
-  
- margin: -40px;
- 
+
+  margin: -40px;
+
 
 
 
@@ -694,7 +693,7 @@ select {
 
 }
 
-.td1{
+.td1 {
   border: 1px solid black;
   padding: 10px;
   font-size: 16px;
@@ -807,9 +806,9 @@ table {
 }
 
 .botao-sair-sidebar {
- background-color: transparent;
- border: transparent;
- text-decoration: none;
+  background-color: transparent;
+  border: transparent;
+  text-decoration: none;
   color: white;
   display: block;
   transition: 0.2s;
@@ -821,8 +820,10 @@ table {
 .fundo-modal-saida {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
@@ -885,33 +886,35 @@ table {
   margin-right: 5px;
 }
 
-.taxa-pontualidade img{
+.taxa-pontualidade img {
   width: 175px;
   height: 150px;
-  
+
 }
+
 #estacao-container {
   display: flex;
   justify-content: center;
   align-items: left;
 
-  
+
 }
 
 .estacao-box {
   border: 3px solid #3b3b3b;
-  padding: 12px 80px;
+  width: 80%;
   margin-top: 20px;
+  padding: 5px;
 }
 
 .estacao-conteudo {
   display: flex;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .estacao-imagem {
-  width: 35px; 
+  width: 35px;
   height: auto;
 }
 
@@ -928,7 +931,7 @@ table {
   gap: 10px;
   max-width: 600px;
   margin: 35px 24px;
-  
+
 }
 
 .numero-trem {
@@ -996,5 +999,127 @@ table {
   border: none;
   height: 2px;
   background-color: #3b3b3b;
+}
+
+.painel-notificacoes__cabecalho {
+  font-size: 1.8rem;
+  
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-left: -190px;
+  margin-top: 40px;
+
+
+}
+
+
+.notificacao-card {
+
+  border-radius: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid;
+  margin-left: 5px;
+  margin-right: 3px;
+  background-color: #c9cbcf;
+  
+}
+
+
+.notificacao-card__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.notificacao-card__titulo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000000;
+  display: flex;
+
+  gap: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+
+.notificacao-card__horario {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+
+.notificacao-card__conteudo {
+  line-height: 1.6;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+
+.notificacao-card__divisor {
+  border: none;
+  height: 1px;
+
+  margin: 20px 0;
+}
+
+
+.filtro-notificacoes {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.filtro-notificacoes__titulo {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #2c3e50;
+}
+
+.filtro-notificacoes__opcao {
+  color: #7f8c8d;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.filtro-notificacoes__opcao--ativa {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.painel-notificacoes-ferroviarias img {
+  width: 25px;
+  height: 25px;
+
+
+
+}
+
+
+
+.line-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 210px;
+}
+
+.acoes-notificacao {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.icone-excluir {
+  width: 20px; 
+  height: 20px;
+  cursor: pointer;
+}
+
+.lidas{
+  background-color: #c9cbcf;
+  border-radius: 10px;
+  padding: 3px;
 }
 
