@@ -675,10 +675,11 @@ select {
 
 .manutencao {
   font-size: 25px;
-  text-align: left;
-  margin-left: 50px;
-  position: absolute;
-  top: 130px;
+  
+ margin: -40px;
+ 
+
+
 
 }
 
@@ -889,3 +890,111 @@ table {
   height: 150px;
   
 }
+#estacao-container {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+
+  
+}
+
+.estacao-box {
+  border: 3px solid #3b3b3b;
+  padding: 12px 80px;
+  margin-top: 20px;
+}
+
+.estacao-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.estacao-imagem {
+  width: 35px; 
+  height: auto;
+}
+
+.estacao-titulo {
+  font-size: 25px;
+  color: #062f63;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.status-trem-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 600px;
+  margin: 35px 24px;
+  
+}
+
+.numero-trem {
+  background-color: #062f63;
+  color: #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.informacoes-trem {
+  flex-grow: 1;
+}
+
+.titulo-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.nome-trem {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  color: #000;
+}
+
+.mensagem-status {
+  color: #555;
+}
+
+.info-detalhada {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tempo-caminhada {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icone-andando {
+  width: 20px;
+  height: 20px;
+}
+
+.texto-caminhada {
+  font-weight: bold;
+}
+
+.horario-trem {
+  font-weight: bold;
+}
+
+.linha-divisoria {
+  margin-top: 5px;
+  border: none;
+  height: 2px;
+  background-color: #3b3b3b;
+}
+

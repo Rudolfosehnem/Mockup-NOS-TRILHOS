@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,104 +8,168 @@
   <link rel="stylesheet" href="../css/style.css" />
 
 </head>
+<script>
+  function abrirSidebar() {
+    document.getElementById("sidebar1").style.width = "220px";
+  }
+
+  function fecharSidebar() {
+    document.getElementById("sidebar1").style.width = "0";
+  }
+</script>
+
 <body>
-  <div class="app">
-    <div class="header">
-      <div class="logo">
-        <span class="menu-icon">☰</span>
-        <h1>NOS TRILHOS</h1>
+
+  <button class="abrir-btn1" onclick="abrirSidebar()">☰</button>
+
+
+  <div id="sidebar1" class="sidebar1">
+    <p class="menuside1"><strong>Menu</strong></p>
+    <hr>
+    <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
+    <a href="../html/dashboard.html"> <img src="../images/casa (1).png" alt=""> Início</a>
+    <a href="../html/gestao.html"> <img src="../images/rotas.png" alt=>Gestão de Rotas</a>
+    <a href="../html/manutencao.html"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
+    <a href="../html/relatorio.html"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
+    <a href="../html/alertas.html"><img src="../images/sinos.png" alt="">Notificações</a>
+    <a href="../html/dashboard2.html"><img src="../images/painel.png" alt=""> Dashboard</a>
+    <a href="#"><img src="../images/sair (1).png" alt="">Sair</a>
+  </div>
+
+  <body>
+    <header class="topo2">
+      <div class="topo2">
+        NOS TRILHOS
       </div>
-      <span class="train-icon">🚂</span>
+
+    </header>
+    <div class="manutencao">
+      <h3> <img src="" alt="">Notificações e Alertas</h3>
+
     </div>
+    <hr style="height: 2px; background-color: black; border: none; width: 100% ; margin-top: 60px;">
 
-    <div class="notificacoes">
-      <h2>Notificações e Alertas</h2>
-      <div class="controls">
-        <button id="toggleNotificacoes">Desativar 🔔</button>
-        <button id="toggleLidas">Não lidas ❌</button>
-      </div>
+    <!DOCTYPE html>
+    <html lang="pt-br">
 
-      <div class="dia">Segunda-feira</div>
-
-<div class="card alerta">
-  <div class="titulo">⚠️ Alerta <span>Seg 5:10 PM</span></div>
-  <div class="mensagem">
-    ATENÇÃO: TRILHO DE TREM INTERROMPIDO!<br />
-    Desvio necessário, siga as orientações de segurança.
-  </div>
-</div>
-
-<div class="card notificacao">
-  <div class="titulo">🔔 Notificação <span>Seg 4:15 PM</span></div>
-  <div class="mensagem">
-    Atualização: Trem 2 partirá com 10 minutos de atraso.<br />
-    Novo horário: 16:55.
-  </div>
-</div>
-
-<div class="card notificacao">
-  <div class="titulo">🔔 Notificação <span>Seg 3:30 PM</span></div>
-  <div class="mensagem">
-    Estação Central com alta movimentação. Chegue com antecedência.
-  </div>
-</div>
-
-<div class="card notificacao">
-  <div class="titulo">🔔 Notificação <span>Seg 2:46 PM</span></div>
-  <div class="mensagem">
-    Próximos Trens:<br />
-    Trem 1 às 15:30, Trem 2 às 16:45, Trem 3 às 17:50.<br />
-    Embarque com segurança!
-  </div>
-</div>
-
-<div class="card notificacao">
-  <div class="titulo">🔔 Notificação <span>Seg 1:02 PM</span></div>
-  <div class="mensagem">
-    Previsão de Chegada dos Trens:<br />
-    Trem 1 às 16:00, Trem 2 às 17:15, Trem 3 às 18:30 e Trem 4 às 19:00.<br />
-    Trem 1 às 16:05, Trem 2 às 17:20, Trem 3 às 18:35 e Trem 4 às 19:10.<br />
-    Obras em andamento. Verifique a nova programação nas plataformas.
-  </div>
-</div>
-
-<div class="card alerta">
-  <div class="titulo">⚠️ Alerta <span>Seg 12:30 PM</span></div>
-  <div class="mensagem">
-    Aviso de manutenção na Linha Azul entre 14h e 18h.<br />
-    Sujeito a atrasos.
-  </div>
-</div>
-
-<div class="card notificacao">
-  <div class="titulo">🔔 Notificação <span>Seg 11:00 AM</span></div>
-  <div class="mensagem">
-    Nova funcionalidade: acompanhe seu trem em tempo real no app!
-  </div>
-</div>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Painel de Notificações Ferroviárias</title>
+      <style>
+        .painel-notificacoes__cabecalho {
+          font-size: 1.8rem;
+          color: #2c3e50;
+          margin-bottom: 25px;
+          padding-bottom: 10px;
 
 
-      <div class="card notificacao">
-        <div class="titulo">🔔 Notificação <span>Seg 2:46 PM</span></div>
-        <div class="mensagem">
-          Próximos Trens:<br />
-          Trem 1 às 15:30, Trem 2 às 16:45, Trem 3 às 17:50.<br />
-          Embarque com segurança!
+        }
+
+
+        .notificacao-card {
+          background-color: #d3d3d3;
+          border-radius: 8px;
+          padding: 20px;
+          margin-bottom: 20px;
+          border: 2px solid;
+          margin-left: 5px;
+        }
+
+
+        .notificacao-card__cabecalho {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .notificacao-card__titulo {
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: #000000;
+          display: flex;
+
+          gap: 15px;
+          padding: 10px;
+          width: fit-content;
+        }
+
+        .notificacao-card__horario {
+          color: #000000;
+          font-size: 0.9rem;
+        }
+
+
+        .notificacao-card__conteudo {
+          line-height: 1.6;
+          color: #2c3e50;
+          font-size: 1rem;
+        }
+
+
+        .notificacao-card__divisor {
+          border: none;
+          height: 1px;
+          background-color: #e0e0e0;
+          margin: 20px 0;
+        }
+
+
+        .filtro-notificacoes {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        .filtro-notificacoes__titulo {
+          font-weight: 600;
+          margin-right: 10px;
+          color: #2c3e50;
+        }
+
+        .filtro-notificacoes__opcao {
+          color: #7f8c8d;
+          margin-right: 15px;
+          cursor: pointer;
+        }
+
+        .filtro-notificacoes__opcao--ativa {
+          color: #3498db;
+          font-weight: 600;
+        }
+
+        .painel-notificacoes-ferroviarias img {
+          width: 25px;
+          height: 25px;
+
+
+
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="painel-notificacoes-ferroviarias">
+        <h1 class="painel-notificacoes__cabecalho">Segunda-feira</h1>
+
+        <div class="notificacao-card" id="notificacao-alerta-trilho">
+          <div class="notificacao-card__cabecalho">
+            <span class="notificacao-card__titulo"> <img src="../images/atencao (1).png" alt="">Alerta</span>
+            <span class="notificacao-card__horario">Seg 5:10 PM</span>
+          </div>
+          <div class="notificacao-card__conteudo">
+            ATENÇÃO: TRILHO DE TREM INTERROMPIDO! Desvio necessário, siga as orientações de segurança.
+          </div>
         </div>
-      </div>
 
-      <div class="card notificacao">
-        <div class="titulo">🔔 Notificação <span>Seg 1:02 PM</span></div>
-        <div class="mensagem">
-          Previsão de Chegada dos Trens:<br />
-          Trem 1 às 16:00, Trem 2 às 17:15, Trem 3 às 18:30 e Trem 4 às 19:00.<br />
-          Trem 1 às 16:05, Trem 2 às 17:20, Trem 3 às 18:35 e Trem 4 às 19:10.<br />
-          Obras em andamento. Verifique a nova programação nas plataformas.
-        </div>
-      </div>
-    </div>
-  </div>
+        <hr class="notificacao-card__divisor">
 
-  <script src="alerta.js"></script>
-</body>
+
+    </body>
+
+    </html>
+
+  </body>
+
 </html>
