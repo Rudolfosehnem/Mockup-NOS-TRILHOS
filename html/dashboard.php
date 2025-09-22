@@ -69,7 +69,9 @@ session_start();
    
     <?php
       if ($_SESSION['user_cargo'] === 'Admin'): ?>
-        <div class="menu-item"><span class="number">6</span> <span>Administração de Usuários</span></div>
+        <a href="../html/adicionar-funcionario.php" class="menu-item">
+          <span class="number">6</span> <span>Administração de Usuários</span>
+        </a>
       <?php endif; ?>
   </div>
 
