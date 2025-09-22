@@ -16,20 +16,20 @@
     <div class="login_id">
         <img class="img-login" src="../images/account.png" alt="">
         <div class="texto1">
-            <form id="loginForm" action="../html/dashboard.html" method="GET">
+            <form id="loginForm" action="../html/dashboard.php" method="GET">
                 <div class="input-box">
                   <div class="img-input">
                     <img src="../images/email.png" alt="email icon">
-                    <input type="email" id="email" required placeholder="Email ID...">
+                    <input type="email" id="email" required placeholder="Email...">
                   </div>
                 </div>
-              
+                
                 <br>
               
                 <div class="input-box">
                   <div class="img-input">
                     <img src="../images/padlock.png" alt="padlock icon">
-                    <input type="password" id="password" required placeholder="Password...">
+                    <input type="password" id="password" required placeholder="Senha...">
                   </div>
                   <span id="password-error" style="color: red; display: none; font-size: 14px;">
                     A senha deve ter pelo menos 8 caracteres e 1 caractere especial.

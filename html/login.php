@@ -21,7 +21,7 @@
     <div class="card">
       <h1>BEM-<br>VINDO</h1>
       <p>NOS TRILHOS aonde você tem acesso às linhas de trem.</p>
-      <a href="loginfaca.html" class="login-btn">
+      <a href="loginfaca.php" class="login-btn">
         Login <i class=""></i>
         <img src="../images/user (2).png" alt="">
       </a>

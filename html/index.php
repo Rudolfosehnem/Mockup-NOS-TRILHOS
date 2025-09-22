@@ -20,7 +20,7 @@
                 <p><b>Loading...</b></p>
                 <img src="../images/trilhos.png" alt="">
             </div>
-            <a href="login.html">
+            <a href="login.php">
                 <button class="btn-entrar">Entrar</button>
             </a>
         </div>

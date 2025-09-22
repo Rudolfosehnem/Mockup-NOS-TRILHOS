@@ -14,16 +14,16 @@
   <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
 
   
-  <div id="sidebar1" class="sidebar1">
+   <div id="sidebar1" class="sidebar1">
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
-    <a href="../html/dashboard.html"><img src="../images/casa (1).png" alt=""> Início</a>
-    <a href="../html/gestao.html"><img src="../images/rotas.png" alt="">Gestão de Rotas</a>
-    <a href="../html/manutencao.html"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
-    <a href="../html/relatorio.html"><img src="../images/relatorio.png" alt="">Relatório e Análise</a>
-    <a href="../html/alertas.html"><img src="../images/sinos.png" alt="">Notificações</a>
-    <a href="../html/dashboard2.html"><img src="../images/painel.png" alt=""> Dashboard</a>
+    <a href="../html/dashboard.php"> <img src="../images/casa (1).png" alt=""> Início</a>
+    <a href="../html/gestao.php"> <img src="../images/rotas.png" alt="">Gestão de Rotas</a>
+    <a href="../html/manutencao.php"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
+    <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
+    <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
+    <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
     <button class="botao-sair-sidebar" onclick="abrirModalSaida()">
       <img src="../images/sair (1).png" alt=""> Sair
     </button>
@@ -39,7 +39,6 @@
         </div>
       </div>
     </div>
-  </div>
   </div>
   </div>
 
