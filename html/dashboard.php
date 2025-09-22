@@ -1,3 +1,9 @@
+<?php
+include 'db.php';
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -60,6 +66,11 @@
     <div class="menu-item"><span class="number">3</span> <span>Relatórios e Análises</span></div>
     <div class="menu-item"><span class="number">4</span> <span>Alertas e Notificações</span></div>
     <div class="menu-item"><span class="number">5</span> <span>Dashboard</span></div>
+   
+    <?php
+      if ($_SESSION['user_cargo'] === 'Admin'): ?>
+        <div class="menu-item"><span class="number">6</span> <span>Administração de Usuários</span></div>
+      <?php endif; ?>
   </div>
 
   <footer>

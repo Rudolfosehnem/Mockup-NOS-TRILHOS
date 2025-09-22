@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($password === $user['senha']) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['email'] = $user['email'];
+            $_SESSION['user_cargo'] = $user['cargo'];
             header("Location: ../html/dashboard.php");
             exit();
         } else {
