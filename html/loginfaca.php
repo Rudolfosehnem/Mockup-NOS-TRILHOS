@@ -1,76 +1,85 @@
+<?php
+include 'db.php'; 
+session_start();
+
+$msg = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM usuarios WHERE email = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        if ($password === $user['senha']) {
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['email'] = $user['email'];
+            header("Location: ../html/dashboard.php");
+            exit();
+        } else {
+            $msg = "Senha incorreta.";
+        }
+    } else {
+        $msg = "Email não encontrado.";
+    }
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Screen - NOS TRILHOS</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login - NOS TRILHOS</title>
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 
-
 <body>
-    <header>
-        <h2 class="topo1">NOS TRILHOS</h2>
-    </header>
+<header>
+    <h2 class="topo1">NOS TRILHOS</h2>
+</header>
 
-    <div class="login_id">
-        <img class="img-login" src="../images/account.png" alt="">
-        <div class="texto1">
-            <form id="loginForm" action="../html/dashboard.php" method="GET">
-                <div class="input-box">
-                  <div class="img-input">
+<div class="login_id">
+    <img class="img-login" src="../images/account.png" alt="Login"/>
+    <div class="texto1">
+        <?php if (!empty($msg)): ?>
+            <div style="color: red; font-size: 16px; margin-bottom: 10px;">
+                <?= htmlspecialchars($msg) ?>
+            </div>
+        <?php endif; ?>
+
+        <form id="loginForm" method="POST">
+            <div class="input-box">
+                <div class="img-input">
                     <img src="../images/email.png" alt="email icon">
-                    <input type="email" id="email" required placeholder="Email...">
-                  </div>
+                    <input type="email" id="email" name="email" required placeholder="Email...">
                 </div>
-                
-                <br>
-              
-                <div class="input-box">
-                  <div class="img-input">
-                    <img src="../images/padlock.png" alt="padlock icon">
-                    <input type="password" id="password" required placeholder="Senha...">
-                  </div>
-                  <span id="password-error" style="color: red; display: none; font-size: 14px;">
-                    A senha deve ter pelo menos 8 caracteres e 1 caractere especial.
-                  </span>
-                </div>
-              
-                <div class="Remenber-me">
-                  <input type="checkbox">
-                  <p class="box1">Remember Me</p>
-                </div>
-              
-                <div class="btn">
-                  <button type="submit" class="button1">Login</button>
-                </div>
-              </form>
-        </div>
-    </div>
+            </div>
 
-    <script>
-        const form = document.getElementById('loginForm');
-        const passwordInput = document.getElementById('password');
-        const errorMessage = document.getElementById('password-error');
-      
-        function validatePassword(password) {
-          const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
-          return password.length >= 8 && specialCharRegex.test(password);
-        }
-      
-        form.addEventListener('submit', function (event) {
-          const password = passwordInput.value;
-      
-          if (!validatePassword(password)) {
-            event.preventDefault(); 
-            errorMessage.style.display = 'block';
-            passwordInput.style.border = '2px solid red';
-          } else {
-           
-            errorMessage.style.display = 'none';
-            passwordInput.style.border = '';
-          }
-        });
-      </script>
+            <br>
+
+            <div class="input-box">
+                <div class="img-input">
+                    <img src="../images/padlock.png" alt="padlock icon">
+                    <input type="password" id="password" name="password" required placeholder="Senha...">
+                </div>
+            </div>
+
+            <div class="Remenber-me">
+                <input type="checkbox">
+                <p class="box1">Lembrar-me</p>
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="button1">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
