@@ -11,12 +11,12 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Início - NOS TRILHOS</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href ="styles.css">
 </head>
 
 <body>
 
-  <button id="botaoAbrirSidebar" class="abrir-btn" onclick="abrirSidebar()">☰</button>
+<button id="botaoAbrirSidebar" class="abrir-btn" onclick="abrirSidebar()">☰</button>
 
 
   <div id="sidebar" class="sidebar">
@@ -29,44 +29,47 @@ session_start();
     <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
     <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
     <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
-    <button class="botao-sair-sidebar" onclick="abrirModalSaida()">
+    
+
+    <a href="logout.php">
+
+<button class="botao-sair-sidebar">
       <img src="../images/sair (1).png" alt=""> Sair
     </button>
 
+   </a>
 
-    <div class="fundo-modal-saida" id="modalSaida">
-      <div class="caixa-confirmacao-saida">
-        <h2>Deseja Sair?</h2>
-        <p>Você deseja se desconectar?</p>
-        <div class="botoes-saida">
-          <button class="botao-cancelar-saida" onclick="fecharModalSaida()">Cancelar</button>
-          <button class="botao-confirmar-saida" onclick="confirmarSaida()">Sair</button>
-        </div>
-      </div>
-    </div>
+
+    
   </div>
 
 
   <h2 class="topo1">NOS TRILHOS</h2>
+  <h2>Cadastro de Usuário</h2>
+    <form action="processa_cadastro.php" method="post">
+ <label>Nome:</label><br>
+        <input type="text" name="nome" required><br><br>
 
-  <div class="add_funcionario">
-    <h2>Adicionar Funcionário</h2>
-    <form action="adicionar_funcionario.php" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label>Senha:</label><br>
+   <input type="password" name="senha" required><br><br>
 
-      <label for="telefone">Telefone:</label>
-      <input type="text" id="telefone" name="telefone" required>
+        <label>CPF:</label><br>
+        <input type="text" name="cpf" required placeholder="000.000.000-00"><br><br>
 
-      <label for="cargo">Cargo:</label>
-      <input type="text" id="cargo" name="cargo" required>
+        <label>Data de Nascimento:</label><br>
+        <input type="date" name="data_nasc" required><br><br>
 
-      <button type="submit">Adicionar Funcionário</button>
+        <label>Cargo:</label><br>
+        <select name="cargo" required>
+            <option value="Funcionario">Funcionario</option>
+            <option value="Admin">Admin</option>
+        </select><br><br>
+
+        <button type="submit">Cadastrar</button>
     </form>
-
   
 
   <footer>
@@ -85,18 +88,7 @@ session_start();
       document.getElementById("botaoAbrirSidebar").style.display = "block";
     }
 
-    function abrirModalSaida() {
-      document.getElementById("modalSaida").style.display = "flex";
-    }
-
-    function fecharModalSaida() {
-      document.getElementById("modalSaida").style.display = "none";
-    }
-
-    function confirmarSaida() {
-      alert("Você saiu!");
-      fecharModalSaida();
-    }
+   
   </script>
 </body>
 
