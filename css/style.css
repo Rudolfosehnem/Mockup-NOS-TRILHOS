@@ -1125,3 +1125,29 @@ table {
   padding: 3px;
 }
 
+.add_funcionario {
+  margin-top: 20px;
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 30%;
+  
+}
+
+.botao-sair-sidebar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #484848;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1001;
+  text-align: left;
+}

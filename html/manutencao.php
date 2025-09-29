@@ -10,10 +10,10 @@
 
 <body>
   
-  <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
+    <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
 
   
-  <div id="sidebar1" class="sidebar1">
+   <div id="sidebar1" class="sidebar1">
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
@@ -23,21 +23,17 @@
     <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
     <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
     <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
-    <button class="botao-sair-sidebar" onclick="abrirModalSaida()">
+
+    
+
+   <a href="logout.php">
+
+<button class="botao-sair-sidebar">
       <img src="../images/sair (1).png" alt=""> Sair
     </button>
 
-   
-    <div class="fundo-modal-saida" id="modalSaida">
-      <div class="caixa-confirmacao-saida">
-        <h2>Deseja Sair?</h2>
-        <p>Você deseja se desconectar?</p>
-        <div class="botoes-saida">
-          <button class="botao-cancelar-saida" onclick="fecharModalSaida()">Cancelar</button>
-          <button class="botao-confirmar-saida" onclick="confirmarSaida()">Sair</button>
-        </div>
-      </div>
-    </div>
+   </a>
+  
   </div>
   </div>
 

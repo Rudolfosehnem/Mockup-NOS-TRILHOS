@@ -49,6 +49,24 @@ session_start();
 
   <h2 class="topo1">NOS TRILHOS</h2>
 
+  <div class="add_funcionario">
+    <h2>Adicionar Funcionário</h2>
+    <form action="adicionar_funcionario.php" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone" required>
+
+      <label for="cargo">Cargo:</label>
+      <input type="text" id="cargo" name="cargo" required>
+
+      <button type="submit">Adicionar Funcionário</button>
+    </form>
+
   
 
   <footer>
