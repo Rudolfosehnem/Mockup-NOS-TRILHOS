@@ -12,14 +12,6 @@ CREATE TABLE usuarios (
 
 );
 
-CREATE TABLE log_email (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  email VARCHAR(255) NOT NULL,
-  status ENUM('ok','invalid','api_error') NOT NULL,
-  detail VARCHAR(255),
-  verificado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
 
 INSERT INTO usuarios (nome, email, senha, cpf, data_nasc, cargo)
 VALUES 
