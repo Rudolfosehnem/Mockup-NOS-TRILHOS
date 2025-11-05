@@ -58,18 +58,34 @@ session_start();
   <h3 class="section-subtitle">Mais acessados</h3>
 
   <div class="menu-list">
-    <div class="menu-item"><span class="number">1</span> <span>Gestão de Rotas</span></div>
-    <div class="menu-item"><span class="number">2</span> <span>Manutenção</span></div>
-    <div class="menu-item"><span class="number">3</span> <span>Relatórios e Análises</span></div>
-    <div class="menu-item"><span class="number">4</span> <span>Alertas e Notificações</span></div>
-    <div class="menu-item"><span class="number">5</span> <span>Dashboard</span></div>
-   
-    <?php
+
+       <a href="../html/gestao.php" class="menu-item">
+        <span class="number">1</span> <span>Gestão de Rotas</span>
+  </a>
+
+    <a href="../html/manutencao.php" class="menu-item">
+        <span class="number">2</span> <span>Manutenção</span>
+  </a>
+
+       <a href="../html/relatorio.php" class="menu-item">
+        <span class="number">3</span> <span>Relatórios e Análises</span>
+  </a>
+
+    <a href="../html/alertas.php" class="menu-item">
+        <span class="number">4</span> <span>Alertas e Notificações</span>
+  </a>
+
+         <a href="../html/dashboard2.php" class="menu-item">
+        <span class="number">5</span> <span>Dashboard</span>
+  </a>
+
+  <?php
       if ($_SESSION['user_cargo'] === 'Admin'): ?>
         <a href="../html/adicionar-funcionario.php" class="menu-item">
           <span class="number">6</span> <span>Administração de Usuários</span>
         </a>
       <?php endif; ?>
+
   </div>
 
   <footer>
