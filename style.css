@@ -758,6 +758,16 @@ table {
 .sidebar1 a:hover {
   background-color: #575757;
 }
+.botao-sair-sidebar {
+  background-color: transparent;
+  border: transparent;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.2s;
+  font-size: 15px;
+  padding-left: 10px;
+}
 
 .menuside1 {
   padding-top: 123px;
@@ -807,16 +817,6 @@ table {
   }
 }
 
-/* .botao-sair-sidebar {
-  background-color: transparent;
-  border: transparent;
-  text-decoration: none;
-  color: white;
-  display: block;
-  transition: 0.2s;
-  font-size: 15px;
-  padding-left: 10px;
-} */
 
 
 .fundo-modal-saida {
@@ -1151,4 +1151,3 @@ table {
   z-index: 1001;
   text-align: left;
 }
-
