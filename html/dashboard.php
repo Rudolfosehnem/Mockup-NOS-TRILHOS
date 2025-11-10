@@ -1,7 +1,12 @@
 <?php
 include 'db.php';
-
 session_start();
+
+if(!isset($_SESSION['id'])){
+  header("location: loginfaca.php");
+  exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -112,10 +117,7 @@ session_start();
       document.getElementById("modalSaida").style.display = "none";
     }
 
-    function confirmarSaida() {
-      alert("Você saiu!");
-      fecharModalSaida();
-    }
+    
   </script>
 </body>
 

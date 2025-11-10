@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha, cpf, data_nasc, cargo) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $nome, $email, $senha, $cpf, $data_nasc, $cargo);
         if ($stmt->execute()) {
-            header("Location: dashboard.php");
+            header("Location: finalizacao_cadastro.php");
         } else {
             echo "Erro ao cadastrar usuário.";
         }

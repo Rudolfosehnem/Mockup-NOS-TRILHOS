@@ -2,8 +2,17 @@
 include 'db.php';
 
 session_start();
-?>
 
+if(!isset($_SESSION['id'])){
+  header("location: loginfaca.php");
+  exit();
+} else if($_SESSION['user_cargo'] != 'Admin'){
+  header("location: dashboard.php");
+  exit();
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 

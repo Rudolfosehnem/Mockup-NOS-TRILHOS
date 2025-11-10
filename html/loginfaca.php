@@ -16,17 +16,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        if ($password === $user['senha']) {
+        if (password_verify($password, $user['senha'])) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['user_cargo'] = $user['cargo'];
-            header("Location: ../html/dashboard.php");
+            header("Location: dashboard.php");
             exit();
         } else {
-            $msg = "Senha incorreta.";
+            $msg = "Login inválido.";
         }
     } else {
-        $msg = "Email não encontrado.";
+        $msg = "Login inválido.";
     }
 }
 ?>
