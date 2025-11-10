@@ -36,13 +36,7 @@ if(!isset($_SESSION['id'])){
 
     
 
-   <a href="logout.php">
-
-<button class="botao-sair-sidebar">
-      <img src="../images/sair (1).png" alt=""> Sair
-    </button>
-
-   </a>
+  <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
   
   </div>
   </div>
