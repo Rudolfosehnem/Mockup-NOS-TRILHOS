@@ -13,7 +13,7 @@ session_start();
   <title>Início - NOS TRILHOS</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* ===== Estilos escopados: Página Adicionar Funcionário ===== */
+      
       .ntUserAdminAddPage {
         padding: 20px 16px;
         max-width: 920px;
@@ -30,16 +30,10 @@ session_start();
         font-size: 22px;
       }
 
-      .ntUserAdminAddPage__headerUnderline {
-        margin-top: 8px;
-        width: 100%;
-        height: 0;
-        border-bottom: 2px solid #000;
-      }
 
       .ntUserAdminAddPage__subtitle {
         margin-top: 12px;
-        font-weight: 600;
+        font-weight: 950;
         color: #3b3b3b;
         text-align: left;
       }
@@ -127,7 +121,7 @@ session_start();
 
       .ntUserAdminAddPage__submitBtn:hover { background: #0055aa; }
 
-      /* Mobile-first; em telas maiores viram 2 colunas */
+     
       @media (min-width: 480px) {
         .ntUserAdminAddPage__submitBtn { width: auto; }
       }
@@ -136,17 +130,17 @@ session_start();
         .ntUserAdminAddPage__row { grid-template-columns: 1fr 1fr; column-gap: 16px; }
       }
 
-      /* Evita sobreposição do rodapé nesta página */
+      
       .ntUserAdminAddPage + footer .rodape { position: static; }
     </style>
 </head>
 
 <body>
 
-<button id="botaoAbrirSidebar" class="abrir-btn" onclick="abrirSidebar()">☰</button>
+ <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
 
-
-  <div id="sidebar" class="sidebar">
+  
+   <div id="sidebar1" class="sidebar1">
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
@@ -156,24 +150,29 @@ session_start();
     <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
     <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
     <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
+
     
 
-    <a href="logout.php">
+   <a href="logout.php">
 
 <button class="botao-sair-sidebar">
       <img src="../images/sair (1).png" alt=""> Sair
     </button>
 
    </a>
-
-
-    
+  
+  </div>
   </div>
 
 
   <div class="ntUserAdminAddPage">
-    <h2 class="ntUserAdminAddPage__headerTitle">NOS TRILHOS</h2>
-    <div class="ntUserAdminAddPage__headerUnderline"></div>
+   
+
+     <header class="topo2">
+    <div class="topo2">
+      NOS TRILHOS
+    </div>
+  </header>
     <p class="ntUserAdminAddPage__subtitle">Cadastro de Usuário</p>
 
     <div class="ntUserAdminAddPage__card">
@@ -229,18 +228,22 @@ session_start();
   </footer>
 
 
-  <script>
+<script>
     function abrirSidebar() {
-      document.getElementById("sidebar").style.width = "220px";
+      document.getElementById("sidebar1").style.width = "220px";
       document.getElementById("botaoAbrirSidebar").style.display = "none";
     }
 
     function fecharSidebar() {
-      document.getElementById("sidebar").style.width = "0";
+      document.getElementById("sidebar1").style.width = "0";
       document.getElementById("botaoAbrirSidebar").style.display = "block";
     }
 
-   
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+
+  
   </script>
 
   
